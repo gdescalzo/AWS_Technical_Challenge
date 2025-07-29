@@ -4,10 +4,13 @@
 # Solution overview
 
 
-![](./img/1.jpg)
-![](./img/2.jpg)
-![](./img/3.jpg)
-![](./img/4.jpg)
+![1](./img/1.jpg)
+
+![2](./img/2.jpg)
+
+![3](./img/3.jpg)
+
+![4](./img/4.jpg)
 
 | Note | The following challenge has been develop in Windows 11 platform, so the following tools are required to reproduce the development and use the solution. Taking in consideration the challenge scope has been develop two solutions <br /><br /> 1. to be executed local <br /> 2. to be executed remote |
 |-|:-|
