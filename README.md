@@ -32,7 +32,7 @@
 <details>
 <summary>GitHub account</summary>
 
-> The GitHub account is easly to be created, you can just go to [www.github.com](https://www.github.com).
+> The GitHub account is easly to be created, just go to [www.github.com](https://www.github.com).
 > If you need more information about the GitHub account creation process, please refer to: [Creating an account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
 
 </details>
@@ -57,32 +57,34 @@
 <details>
 <summary>AWS account (optional)</summary>
 
+The GitHub account is easly to be created, just go to: [AWS Free tier](https://aws.amazon.com/es/free/?gclid=Cj0KCQjw4qHEBhCDARIsALYKFNPnE6_Knezg_C6o9NplWfM2DgjD5C-jHADXOWhsRq3reozrkAwuCTIaAl8eEALw_wcB&trk=8185e5da-db92-479f-91f4-d73ac3fcd9e5&sc_channel=ps&ef_id=Cj0KCQjw4qHEBhCDARIsALYKFNPnE6_Knezg_C6o9NplWfM2DgjD5C-jHADXOWhsRq3reozrkAwuCTIaAl8eEALw_wcB%3AG%3As&s_kwcid=AL%214422%213%21648113981729%21e%21%21g%21%21create+aws+account%2119666585841%21146843812798&gad_campaignid=19666585841&gbraid=0AAAAADjHtp-RUpxg6Q1rcN5DSaZO3cX3u&ams%23interactive-card-vertical%23pattern-data-339318104.filter=%257B%2522filters%2522%253A%255B%255D%257D)
+
 </details>
 
 
 ## Best practises
 
-> Sabiendo que este challenge es utilizado para determinar las habilidades de un ingeniero de cloud en un entorno laboral, es recomendado, pero no mandatorio seguir ciertos lineamientos de diseño y seguridad. A continuacion puede encontrar las configuraciones necesarias en las plataformas AWS, GitHub y Terraform con el de preparar el ambiente para la ejecusion de la prueba de concepto.
+> Knowing that this challenge is used to determine the skills of a cloud engineer in a work environment, it is recommended, but not mandatory, to follow certain design and security guidelines. Below you can find the necessary configurations on the AWS, GitHub, and Terraform platforms to prepare the environment for running the proof of concept..
 
 <details>
 <summary>GitHub best practises.</summary>
 
-1. create a privated repository: the purpose of this is onece you already consolidate the solution, then make it public.
-2. create more of one branch: en ambientes profesionales, and as a best practise, is not common work and test on the same enviroment, because is not safe and can cause disrruptions over the service. El codigo producido debe ser revisado y aprobado antes de mergearse en la rama principal, por lo tanto al momento del desarrollo de esta actividad se considero, desarrolla en una rama llamada DEV y una vez realizado el desarrollo atravez de un pull request, mergear a main.
-3. create secrets: crear secretos en el proyecto de GitHub con el  fin de almacenar las credenciales de AWS para ejecusion remota.
+1. Create a private repository: The purpose of this is to make it public once you've consolidated the solution.
+2. Create more than one branch: In professional environments, and as best practice, it's not common to work and test in the same environment because it's unsafe and can cause service disruptions. The code produced must be reviewed and approved before merging into the main branch. Therefore, when developing this activity, it was considered to develop it in a branch called DEV, and once the development is complete through a pull request, merge it into main.
+3. Create secrets: Create secrets in the GitHub project to store AWS credentials for remote execution.
 
 </details>
 
 <details>
 <summary>AWS best practises.</summary>
 
-1. No utilizar el usuario root, crear una cuenta admin.
-2. Definir metodo de autenticacion para GitHub
-3. Crear role para Terraform
-4. definir politicas para el role Terraform, solo dandole privilegios para lo que debe realizar.
-5. Realizar integracion entre AWS y GitHub
-6. Instalar AWS Cli en Windows 11 a fin de primero desarrollar localmente
-7. Instalar Terraform en Windows 11 a fin de poder testear el codigo y el aprovisionamiento correcto de los recursos en AWS.
+1. Don't use the root user, create an admin account.
+2. Define the authentication method for GitHub.
+3. Create a role for Terraform.
+4. Define policies for the Terraform role, only giving it privileges for what it should do.
+5. Integrate between AWS and GitHub.
+6. Install AWS CLI on Windows 11 to develop locally first.
+7. Install Terraform on Windows 11 to test the code and ensure proper resource provisioning in AWS.
 
 </details>
 
