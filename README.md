@@ -18,19 +18,19 @@
 >   - Subnet 4: 10.1.3.0/24 (_private_)
 > - One EC2 instance in subnet 2 (_t2.micro, RedHat Linux, 20 GB_)
 > - An Auto Scaling Group (_ASG_) in subnets 3 and 4 with:
->  - RedHat Linux
->  - Apache installed via user-data
->  - IAM role to read from an S3 bucket "images"
->  - Min: 2 / Max: 6 instances
->  - t2.micro
+>   - RedHat Linux
+>   - Apache installed via user-data
+>   - IAM role to read from an S3 bucket "images"
+>   - Min: 2 / Max: 6 instances
+>   - t2.micro
 > - An Application Load Balancer (ALB):
->  - Listens on port 80
->  - Forwards traffic to ASG on port 443
+>   - Listens on port 80
+>   - Forwards traffic to ASG on port 443
 > - S3 Buckets:
->  - images: with archive/ and memes/ folders (memes → Glacier after 90 days)
->  - logs: with active/ and inactive/ folders (inactive → deleted after 90 days)
+>   - images: with archive/ and memes/ folders (memes → Glacier after 90 days)
+>   - logs: with active/ and inactive/ folders (inactive → deleted after 90 days)
 > - IAM roles:
->  - Allow EC2 and ASG hosts to write logs to the logs buck
+>   - Allow EC2 and ASG hosts to write logs to the logs buck
 
 <details>
 <summary>AWS Technical Challenge details.</summary>
