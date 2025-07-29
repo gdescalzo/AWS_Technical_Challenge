@@ -48,6 +48,10 @@
 <details>
 <summary>Terraform</summary>
 
+> For download Terraform please follow this link: [Install Terraform](https://developer.hashicorp.com/terraform/install#windows)
+> If you wana know more about the installation process you can go to the following link: [A Beginner’s Guide to Installing Terraform on Windows](https://medium.com/@morsi.masmoudi/a-beginners-guide-to-installing-terraform-on-windows-9321e566893d)
+
+
 </details>
 
 <details>
@@ -89,6 +93,10 @@
 ## Design decisions and assumptions
 
 ## References to resources used
+
+| Reference | Link | Description |
+| - | - | :- |
+| Terraform  | [A Beginner’s Guide to Installing Terraform on Windows](<https://medium.com/@morsi.masmoudi/a-beginners-guide-to-installing-terraform-on-windows-9321e566893d>) | 
 
 ## Assumptions made
 
