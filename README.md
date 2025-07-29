@@ -1,8 +1,9 @@
-[[_TOC_]]
+# Introduction
 
+> El repositorio responde a un desafio de creacion de infraestructura, por favor encuentre los detalles de creacion debajo:
 
-# Solution overview
-
+<details>
+<summary>AWS Technical Challenget</summary>
 
 ![1](./img/1.jpg)
 
@@ -11,6 +12,12 @@
 ![3](./img/3.jpg)
 
 ![4](./img/4.jpg)
+
+</details>
+
+<hr />
+
+# Solution overview
 
 | Note | The following challenge has been develop in Windows 11 platform, so the following tools are required to reproduce the development and use the solution. Taking in consideration the challenge scope has been develop two solutions <br /><br /> 1. to be executed local <br /> 2. to be executed remote |
 |-|:-|
@@ -74,6 +81,8 @@
 7. Instalar Terraform en Windows 11 a fin de poder testear el codigo y el aprovisionamiento correcto de los recursos en AWS.
 
 </details>
+
+<hr />
 
 ## Deployment instructions
 
