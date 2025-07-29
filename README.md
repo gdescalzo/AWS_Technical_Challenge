@@ -48,14 +48,10 @@
 
 # Solution overview
 
-<table>
-<tbody>
-<tr>
-<td><strong>Note</strong></td>
-<td>The following challenge has been develop in Windows 11 platform, so the following tools are required to reproduce the development and use the solution. Taking in consideration the challenge scope has been develop two solutions <br /><br /> 1. to be executed local <br /> 2. to be executed remote</td>
-</tr>
-</tbody>
-</table>
+> This project is structured as an infrastructure-as-code deployment using Terraform. Two modes of execution are supported:
+>
+> 1. Local Execution: Developers can apply infrastructure changes from their local machines using the Terraform CLI.
+> 2. Remote Execution (Improvement Plan): Infrastructure is deployed automatically via GitHub Actions on PR merges.
 
 ## Pre-requisites
 
@@ -70,7 +66,7 @@
 </details>
 
 <details>
-<summary>AWS account (optional)</summary>
+<summary>AWS account</summary>
 
 The GitHub account is easly to be created, just go to: [AWS Free tier](https://aws.amazon.com/es/free/?gclid=Cj0KCQjw4qHEBhCDARIsALYKFNPnE6_Knezg_C6o9NplWfM2DgjD5C-jHADXOWhsRq3reozrkAwuCTIaAl8eEALw_wcB&trk=8185e5da-db92-479f-91f4-d73ac3fcd9e5&sc_channel=ps&ef_id=Cj0KCQjw4qHEBhCDARIsALYKFNPnE6_Knezg_C6o9NplWfM2DgjD5C-jHADXOWhsRq3reozrkAwuCTIaAl8eEALw_wcB%3AG%3As&s_kwcid=AL%214422%213%21648113981729%21e%21%21g%21%21create+aws+account%2119666585841%21146843812798&gad_campaignid=19666585841&gbraid=0AAAAADjHtp-RUpxg6Q1rcN5DSaZO3cX3u&ams%23interactive-card-vertical%23pattern-data-339318104.filter=%257B%2522filters%2522%253A%255B%255D%257D)
 
@@ -85,7 +81,7 @@ The GitHub account is easly to be created, just go to: [AWS Free tier](https://a
 </details>
 
 <details>
-<summary>Text editor</summary>
+<summary>Visual Studio Code</summary>
 
 > For this challenge I been choised to use vsCode, you can download directly from:
 > If you wana know more about the installation process you can go to the following link: [Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows)
