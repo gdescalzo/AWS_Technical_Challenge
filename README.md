@@ -3,7 +3,7 @@
 
 # Solution overview
 
-| Note | The following challenge has been develop in Windows 11 platform, so the following tools are required to reproduce the development and use the solution. Taking in consideration the challenge scope has been develop two solutions <br /> 1. to be executed locally <br /> 2. to be executed remotly |
+| Note | The following challenge has been develop in Windows 11 platform, so the following tools are required to reproduce the development and use the solution. Taking in consideration the challenge scope has been develop two solutions <br /><br /> 1. to be executed local <br /> 2. to be executed remote |
 |-|:-|
 
 
