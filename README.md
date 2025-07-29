@@ -5,10 +5,10 @@
 <details>
 <summary>AWS Technical Challenge details.</summary>
 
-![Page 1](img/1.jpg)
-![Page 2](img/2.jpg)
-![Page 3](img/3.jpg)
-![Page 4](img/4.jpg)
+<img src="https://drive.google.com/file/d/135la1d52GCZPFHAAi6kUSUcv_y18Plkg/view?usp=sharing">
+<img src="https://drive.google.com/file/d/1VcUamkUyo6oKIpmAcsWDQFLj_8o9FULr/view?usp=sharing">
+<img src="https://drive.google.com/file/d/1mYzOGHjMEg198WMzi5i_j8YMnNDdYGk1/view?usp=sharing">
+<img src="https://drive.google.com/file/d/1y53JtVmNnImnI0PVzfGRlM7wDYuJSxdD/view?usp=sharing">
 
 </details>
 
