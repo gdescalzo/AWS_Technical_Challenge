@@ -1,3 +1,51 @@
+[_TOC_]
+
+
+## Solution overview
+
+| **Clarification**: The following challenge has been develop in Windows 11 platform, so the following tools are required to reproduce the development and use the solution. Taking in consideration the challenge scope has been develop two solutions: |
+|-|
+
+1. to be executed locally
+2. to be executed remotly
+
+### Pre-requisites
+
+> Please find bellow the pre-requisites
+
+1. GitHub account
+2. Text editor (_in my case I used to develop the solution vsCode_)
+3. AWS account (_optional, for testing purposes._)
+
+## Deployment instructions
+
+## Design decisions and assumptions
+
+## References to resources used
+
+## Assumptions made
+
+## Improvement plan with priorities
+
+## Analysis of operational gaps
+
+## Solutions Diagram
+
+| **Clarification**: The following SD is properly formatted and styled diagram against AWS diagram standards. |
+|-|
+
+**Content**
+
+o All deployed components identified
+o Connectivity/dataflow’s identified
+
+## Terraform configurations
+
+Please find below Terraform solution diagram content
+
+
+
+
 - [VPC Launch](#vpc-launch)
   - [VPC Components](#vpc-components)
   - [Terraform Modules](#terraform-modules)
