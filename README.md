@@ -42,7 +42,7 @@
 
 ## Best practises
 
-Sabiendo que este challenge es utilizado para determinar las habilidades de un ingeniero de cloud en un entorno laboral, es recomendado, pero no mandatorio seguir ciertos lineamientos de diseño y seguridad. A continuacion puede encontrar las configuraciones necesarias en las plataformas AWS, GitHub y Terraform con el de preparar el ambiente para la ejecusion de la prueba de concepto.
+> Sabiendo que este challenge es utilizado para determinar las habilidades de un ingeniero de cloud en un entorno laboral, es recomendado, pero no mandatorio seguir ciertos lineamientos de diseño y seguridad. A continuacion puede encontrar las configuraciones necesarias en las plataformas AWS, GitHub y Terraform con el de preparar el ambiente para la ejecusion de la prueba de concepto.
 
 <details>
 <summary>GitHub best practises.</summary>
