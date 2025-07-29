@@ -54,7 +54,7 @@ Sabiendo que este challenge es utilizado para determinar las habilidades de un i
 </details>
 
 <details>
-<summary>AWS best practises./summary>
+<summary>AWS best practises.</summary>
 
 1. No utilizar el usuario root, crear una cuenta admin.
 2. Definir metodo de autenticacion para GitHub
