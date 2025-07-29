@@ -3,8 +3,8 @@
 
 # Solution overview
 
-| **Clarification** The following challenge has been develop in **Windows 11 platform**, so the following tools are required to reproduce the development and use the solution. Taking in consideration the challenge scope has been develop two solutions: |
-|-|
+| **Note** | The following challenge has been develop in **Windows 11 platform**, so the following tools are required to reproduce the development and use the solution. Taking in consideration the challenge scope has been develop two solutions: |
+|-| - |
 
 1. to be executed locally
 2. to be executed remotly
