@@ -1,21 +1,70 @@
 [_TOC_]
 
 
-## Solution overview
+# Solution overview
 
-| **Clarification**: The following challenge has been develop in Windows 11 platform, so the following tools are required to reproduce the development and use the solution. Taking in consideration the challenge scope has been develop two solutions: |
+| **Clarification** The following challenge has been develop in **Windows 11 platform**, so the following tools are required to reproduce the development and use the solution. Taking in consideration the challenge scope has been develop two solutions: |
 |-|
 
 1. to be executed locally
 2. to be executed remotly
 
-### Pre-requisites
+## Pre-requisites
 
 > Please find bellow the pre-requisites
 
-1. GitHub account
-2. Text editor (_in my case I used to develop the solution vsCode_)
-3. AWS account (_optional, for testing purposes._)
+<details>
+<summary>GitHub account</summary>
+
+> The GitHub account is easly to be created, you can just go to [www.github.com](https://www.github.com).
+> If you need more information about the GitHub account creation process, please refer to: [Creating an account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
+
+</details>
+
+<details>
+<summary>Text editor</summary>
+
+> For this challenge I been choised to use vsCode, you can download directly from:
+> If you wana know more about the installation process you can go to the following link: [Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows)
+
+</details>
+
+<details>
+<summary>Terraform</summary>
+
+</details>
+
+<details>
+<summary>AWS account (optional)</summary>
+
+</details>
+
+
+## Best practises
+
+Sabiendo que este challenge es utilizado para determinar las habilidades de un ingeniero de cloud en un entorno laboral, es recomendado, pero no mandatorio seguir ciertos lineamientos de diseño y seguridad. A continuacion puede encontrar las configuraciones necesarias en las plataformas AWS, GitHub y Terraform con el de preparar el ambiente para la ejecusion de la prueba de concepto.
+
+<details>
+<summary>GitHub best practises.</summary>
+
+1. create a privated repository: the purpose of this is onece you already consolidate the solution, then make it public.
+2. create more of one branch: en ambientes profesionales, and as a best practise, is not common work and test on the same enviroment, because is not safe and can cause disrruptions over the service. El codigo producido debe ser revisado y aprobado antes de mergearse en la rama principal, por lo tanto al momento del desarrollo de esta actividad se considero, desarrolla en una rama llamada DEV y una vez realizado el desarrollo atravez de un pull request, mergear a main.
+3. create secrets: crear secretos en el proyecto de GitHub con el  fin de almacenar las credenciales de AWS para ejecusion remota.
+
+</details>
+
+<details>
+<summary>AWS best practises./summary>
+
+1. No utilizar el usuario root, crear una cuenta admin.
+2. Definir metodo de autenticacion para GitHub
+3. Crear role para Terraform
+4. definir politicas para el role Terraform, solo dandole privilegios para lo que debe realizar.
+5. Realizar integracion entre AWS y GitHub
+6. Instalar AWS Cli en Windows 11 a fin de primero desarrollar localmente
+7. Instalar Terraform en Windows 11 a fin de poder testear el codigo y el aprovisionamiento correcto de los recursos en AWS.
+
+</details>
 
 ## Deployment instructions
 
