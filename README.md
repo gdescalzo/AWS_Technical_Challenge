@@ -6,9 +6,9 @@
 <summary>AWS Technical Challenge details.</summary>
 
 <img src="https://drive.google.com/uc?id=135la1d52GCZPFHAAi6kUSUcv_y18Plkg">
-<img src="https://drive.google.com/file/d/1VcUamkUyo6oKIpmAcsWDQFLj_8o9FULr/view?usp=sharing">
-<img src="https://drive.google.com/file/d/1mYzOGHjMEg198WMzi5i_j8YMnNDdYGk1/view?usp=sharing">
-<img src="https://drive.google.com/file/d/1y53JtVmNnImnI0PVzfGRlM7wDYuJSxdD/view?usp=sharing">
+<img src="https://drive.google.com/uc?id=1VcUamkUyo6oKIpmAcsWDQFLj_8o9FULr">
+<img src="https://drive.google.com/uc?id=1mYzOGHjMEg198WMzi5i_j8YMnNDdYGk1">
+<img src="https://drive.google.com/uc?id=1y53JtVmNnImnI0PVzfGRlM7wDYuJSxdD">
 
 </details>
 
