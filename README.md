@@ -5,13 +5,13 @@
 <details>
 <summary>AWS Technical Challenge details.</summary>
 
-<img src="https://github.com/gdescalzo/AWS_Technical_Challenge/blob/main/img/1.jpg" />
+<img src="img/1.jpg" />
 
-<img src="<https://github.com/gdescalzo/AWS_Technical_Challenge/blob/main/img/2.jpg">
+<img src="img/2.jpg" />
 
-<img src="https://github.com/gdescalzo/AWS_Technical_Challenge/blob/main/img/3.jpg">
+<img src="img/3.jpg" />
 
-<img src="<https://github.com/gdescalzo/AWS_Technical_Challenge/blob/main/img/4.jpg">
+<img src="img/4.jpg" />
 
 </details>
 
