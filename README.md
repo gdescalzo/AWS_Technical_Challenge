@@ -23,12 +23,12 @@
 >   - IAM role to read from an S3 bucket "images"
 >   - Min: 2 / Max: 6 instances
 >   - t2.micro
-> - An Application Load Balancer (ALB):
+> - An Application Load Balancer (_ALB_):
 >   - Listens on port 80
 >   - Forwards traffic to ASG on port 443
 > - S3 Buckets:
->   - images: with archive/ and memes/ folders (memes → Glacier after 90 days)
->   - logs: with active/ and inactive/ folders (inactive → deleted after 90 days)
+>   - images: with archive/ and memes/ folders (_memes → Glacier after 90 days_)
+>   - logs: with active/ and inactive/ folders (_inactive → deleted after 90 days_)
 > - IAM roles:
 >   - Allow EC2 and ASG hosts to write logs to the logs buck
 
@@ -129,6 +129,7 @@ The GitHub account is easly to be created, just go to: [AWS Free tier](https://a
 | Reference | Link | Description |
 | - | - | :- |
 | Terraform  | [A Beginner’s Guide to Installing Terraform on Windows](<https://medium.com/@morsi.masmoudi/a-beginners-guide-to-installing-terraform-on-windows-9321e566893d>) | 
+| Markdown | [Embedding images in google drive to markdown](https://www.intodeeplearning.com/embedding-images-in-google-drive-to-markdown/) |
 
 ## Assumptions made
 
