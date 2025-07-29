@@ -5,13 +5,10 @@
 <details>
 <summary>AWS Technical Challenge details.</summary>
 
-<img src="img/1.jpg" />
-
-<img src="img/2.jpg" />
-
-<img src="img/3.jpg" />
-
-<img src="img/4.jpg" />
+![Page 1](img/1.jpg)
+![Page 2](img/2.jpg)
+![Page 3](img/3.jpg)
+![Page 4](img/4.jpg)
 
 </details>
 
