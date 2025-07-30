@@ -283,6 +283,31 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 
 </details>
 
+<details>
+<summary><strong>Step 2</strong>: Configure AWS CLI with the new IAM user's credentials</summary>
+
+<br />
+
+Once the access key and secret access key for your `terraform-challenge` user have been generated and downloaded, you can configure the AWS CLI to use them by running the `aws configure` command. This will store the credentials locally and enable Terraform to authenticate with AWS.
+
+### Instructions
+
+1. Open a terminal or command prompt and run the following command: `aws configure`
+1. You will be prompted to enter the following values:
+   | <div align="center">Prompt</div> | <div align="center">Example Value</div> |
+   | :- | :- |
+   | AWS Access Key ID | `AKIAIOSFODNN7EXAMPLE` |
+   | AWS Secret Access Key | `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY` |
+   | Default region name | `us-east-1` |
+   | Default output format | `json` |
+1. After entering this information, the AWS CLI will store the credentials in:
+   - ~/.aws/credentials
+   - ~/.aws/config
+
+   _If successful, this will return your AWS account and IAM user information._
+
+</details> 
+
 <hr />
 
 ## References to resources used
