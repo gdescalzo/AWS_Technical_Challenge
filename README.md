@@ -281,6 +281,8 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 
 </details>
 
+<hr />
+
 ## References to resources used
 
 | Reference | Link | Description |
