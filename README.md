@@ -261,7 +261,7 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 
 **Instructions**:
 
-> Terraform user creation
+> **User creation**
 
 | Capture | <div align="center">Description</div> |
 | :-: | :- |
@@ -272,7 +272,7 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 | <img src="https://drive.google.com/uc?id=1CbgQ0AaK9bxLR_VYoiAvUz8CXLhUdWw9"> | 15. Click **Create user** |
 | <img src="https://drive.google.com/uc?id=1r27kTryQdTfhxm6TwIvhPyf3sVFR-_me"> | 16. Click **Download .csv file** |
 
-> Access Key creation
+> **Access Key creation**
 
 | Capture | <div align="center">Description</div> |
 | :-: | :- |
