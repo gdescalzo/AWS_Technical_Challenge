@@ -30,20 +30,20 @@ variable "igw_name" {
 
 variable "vpc_cidr_block" {
   description = "CIDR block for VPC"
-  default     = "10.0.0.0/16"
+  default     = "10.1.0.0/16"
   type        = string
 }
 
 variable "subnet_public_cidr" {
  type        = string
  description = "Public Subnet CIDR values"
- default     = "10.0.1.0/24"
+ default = ["10.1.0.0/24", "10.1.1.0/24"]
 }
  
 variable "subnet_private_cidr" {
  type        = string
  description = "Private Subnet CIDR values"
- default     = "10.0.2.0/24"
+ default = ["10.1.2.0/24", "10.1.3.0/24"]
 }
 
 variable "az_subnet_public" {
