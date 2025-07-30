@@ -177,12 +177,25 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 
 </details>
 
-
 <hr />
 
-## Deployment instructions
+## Architecture Design
 
-## Design decisions and assumptions
+### Design decisions 
+
+> - Modular structure: all core components (VPC, subnets, IGW, SGs, etc.) are implemented via reusable modules.
+> - CIDR blocks are parameterized to support easy scaling.
+> - High availability is achieved using subnets across two AZs.
+> - ALB to ASG communication uses HTTPS (443) for simulated security context
+
+### Assumptions
+
+> - AWS region used is us-east-1 (modifiable via variables).
+> - EC2 AMI for Red Hat Linux is available in the selected region.
+> - Buckets images and logs are created and managed via Terraform.
+> - Apache installed via user-data shell script.
+
+## Deployment Instructions
 
 ## References to resources used
 
