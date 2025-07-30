@@ -57,8 +57,8 @@
 
 | <div align="center">Execution Mode</div> | <div align="center">Description</div> |
 | :- | :- |
-| Local Execution | Developers can apply infrastructure changes from their local machines using the Terraform CLI. |
-| Remote Execution | Infrastructure is deployed automatically via GitHub Actions on PR merges. |
+| Local Execution | _Developers can apply infrastructure changes from their local machines using the Terraform CLI._ |
+| Remote Execution | _Infrastructure is deployed automatically via GitHub Actions on PR merges._ |
 
 
 ## Pre-requisites
