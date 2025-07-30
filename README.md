@@ -253,7 +253,7 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 
 **Instructions**:
 
-1. Go to the AWS Console and navigate to **IAM > Users > Create users**.
+1. Go to the AWS Console and navigate to **IAM > Users > Create users**. <br />
    <img src="https://drive.google.com/uc?id=1YpbmDSfN01a3laY0u77Oq8BaNZe7isA1">
 2. Enter a username such as `terraform-challenge`.
 3. Select **Access key – Programmatic access** as the authentication type.
