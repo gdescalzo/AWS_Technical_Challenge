@@ -303,6 +303,7 @@ Once the access key and secret access key for your `terraform-challenge` user ha
 1. After entering this information, the AWS CLI will store the credentials in:
    - ~/.aws/credentials
    - ~/.aws/config
+   <img src="https://drive.google.com/uc?id=1ohZfnSSvJcU6GR1RkoVtILI7fcAXi5fE">  
 
    _If successful, this will return your AWS account and IAM user information._
    <img src="https://drive.google.com/uc?id=1F8M-v5tyYuwYaddzicZcyxKl0yWuRvwB">
