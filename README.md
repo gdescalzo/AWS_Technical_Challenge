@@ -62,11 +62,9 @@
 
 ## Infrastructure Diagram
 
-<table>
-<tr>
-<td>
 ```mermaid
 flowchart TD
+width: 50%
     Internet((Internet)) --> IGW[Internet Gateway]
     IGW --> A[VPC 10.1.0.0/16]
     A --> B[Public Subnet 1<br/>10.1.0.0/24 - AZ1]
@@ -86,9 +84,6 @@ flowchart TD
         S3Logs
     end
 ```
-</td>
-</tr>
-</table>
 
 ## Pre-requisites
 
