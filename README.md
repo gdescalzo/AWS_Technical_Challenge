@@ -261,11 +261,10 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 
 **Instructions**:
 
-1. Go to the AWS Console and navigate to **IAM > Users > Create users**. <br /><br />
-   <img src="https://drive.google.com/uc?id=1YpbmDSfN01a3laY0u77Oq8BaNZe7isA1">
-2. Enter a username such as `terraform-challenge`.
-3. Select **Access key – Programmatic access** as the authentication type.
-4. Click **Next** to configure permissions.
+| Step | <div align="center">Description</div> |
+| :-: | :- |
+| <img src="https://drive.google.com/uc?id=1YpbmDSfN01a3laY0u77Oq8BaNZe7isA1"> | 1. Go to the AWS Console and navigate to **IAM > Users > Create users** |
+| <img src="https://drive.google.com/uc?id=1Ww4k5QWh4QDooyu6bcyCj028cZAKnII3"> | 2. Enter a username such as `terraform-challenge`.<br /> 3. Select **Provide user access to the AWS Management Console - optional** to gran console access <br /> 4. Set a **Custom password** <br /> 5. Un check **Users must create a new password at next sign-in** <br /> 6. Click **Next** |
 
 </details>
 
