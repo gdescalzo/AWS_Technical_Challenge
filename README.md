@@ -123,8 +123,6 @@
 
 </details>
 
-## Best practices
-
 ## Best Practices
 
 To align with industry standards and demonstrate a real-world approach to cloud infrastructure design, it's recommended to follow a set of best practices across the platforms used in this challenge. These practices improve **security**, **automation**, and **team collaboration**.
