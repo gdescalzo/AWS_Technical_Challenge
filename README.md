@@ -10,7 +10,7 @@
 
 > The challenge consists of deploying the following components:
 
-| Component | Details |
+| <div align="center">Component</div> | <div align="center">Details</div> |
 | :- | :- |
 | VPC | CIDR block `10.1.0.0/16` |
 | Subnet 1 | `10.1.0.0/24` (Public, AZ1) |
