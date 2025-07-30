@@ -53,6 +53,13 @@
 
 # Solution overview
 
+> This project is structured as an infrastructure-as-code deployment using Terraform. Two modes of execution are supported:
+
+| <div align="center">Execution Mode</div> | <div align="center">Description</div> |
+| :- | :- |
+| Local Execution | _Developers can apply infrastructure changes from their local machines using the Terraform CLI._ |
+| Remote Execution | _Infrastructure is deployed automatically via GitHub Actions on PR merges._ |
+
 ## Infrastructure Diagram
 
 ```mermaid
@@ -76,14 +83,6 @@ flowchart TD
         S3Logs
     end
 ```
-
-> This project is structured as an infrastructure-as-code deployment using Terraform. Two modes of execution are supported:
-
-| <div align="center">Execution Mode</div> | <div align="center">Description</div> |
-| :- | :- |
-| Local Execution | _Developers can apply infrastructure changes from their local machines using the Terraform CLI._ |
-| Remote Execution | _Infrastructure is deployed automatically via GitHub Actions on PR merges._ |
-
 
 ## Pre-requisites
 
