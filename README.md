@@ -72,7 +72,7 @@
 </details>
 
 <details>
-<summary>AWS Account</summary>
+<summary>AWS account</summary>
 
 > To provision cloud infrastructure, you will need an AWS account with access to the Free Tier.
 >
