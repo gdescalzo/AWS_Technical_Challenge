@@ -53,9 +53,13 @@
 
 # Solution overview
 
+### 3.3. Infrastructure Diagram (Mermaid)
+
 ```mermaid
 flowchart TD
-    A[VPC 10.1.0.0/16] --> B[Public Subnet 1<br/>10.1.0.0/24 - AZ1]
+    Internet((Internet)) --> IGW[Internet Gateway]
+    IGW --> A[VPC 10.1.0.0/16]
+    A --> B[Public Subnet 1<br/>10.1.0.0/24 - AZ1]
     A --> C[Public Subnet 2<br/>10.1.1.0/24 - AZ2]
     A --> D[Private Subnet 3<br/>10.1.2.0/24 - AZ1]
     A --> E[Private Subnet 4<br/>10.1.3.0/24 - AZ2]
