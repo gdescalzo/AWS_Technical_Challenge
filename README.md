@@ -87,18 +87,29 @@
 <details>
 <summary>Terraform</summary>
 
-> For download Terraform please follow this link: [Install Terraform](https://developer.hashicorp.com/terraform/install#windows)
-> If you wana know more about the installation process you can go to the following link: [A Beginner’s Guide to Installing Terraform on Windows](https://medium.com/@morsi.masmoudi/a-beginners-guide-to-installing-terraform-on-windows-9321e566893d)
+> Terraform is the main tool used to provision infrastructure in this challenge.  
+>
+> You can download the latest version for your operating system here:  
+> [Terraform Installation Guide](https://developer.hashicorp.com/terraform/install#windows)
+>
+> If you are new to Terraform, this beginner-friendly tutorial may help you with the setup and usage:  
+> [A Beginner’s Guide to Installing Terraform on Windows](https://medium.com/@morsi.masmoudi/a-beginners-guide-to-installing-terraform-on-windows-9321e566893d)
 
 </details>
 
 <details>
 <summary>Visual Studio Code</summary>
 
-> For this challenge I been choised to use vsCode, you can download directly from:
-> If you wana know more about the installation process you can go to the following link: [Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows)
+> Visual Studio Code (VS Code) is a recommended text editor for working with Terraform projects.  
+>
+> You can download the installer from the official website:  
+> [Download Visual Studio Code](https://code.visualstudio.com/)
+>
+> For setup instructions specific to Windows, refer to:  
+> [Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows)
 
 </details>
+
 
 ## Best practices
 
