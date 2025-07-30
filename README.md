@@ -62,6 +62,9 @@
 
 ## Infrastructure Diagram
 
+<table>
+<tr>
+<td>
 ```mermaid
 flowchart TD
     Internet((Internet)) --> IGW[Internet Gateway]
@@ -83,6 +86,9 @@ flowchart TD
         S3Logs
     end
 ```
+</td>
+</tr>
+</table>
 
 ## Pre-requisites
 
