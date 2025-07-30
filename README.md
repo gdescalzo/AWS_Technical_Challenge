@@ -10,6 +10,9 @@
 
 > The challenge consists of deploying the following components:
 
+<details>
+<summary>Components list</summary>
+
 | <div align="center">Component</div> | <div align="center">Details</div> |
 | :- | :- |
 | VPC | CIDR block `10.1.0.0/16` |
@@ -24,6 +27,8 @@
 | S3 Bucket: `images` | Folders: `archive/`, `memes/` (memes → Glacier after 90 days) |
 | S3 Bucket: `logs` | Folders: `active/`, `inactive/` (inactive → delete after 90 days) |
 | IAM Roles | Allow EC2 and ASG to write logs to the `logs` bucket |
+
+</details>
 
 <table>
 <tr>
