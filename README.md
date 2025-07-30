@@ -263,7 +263,7 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 
 | Step | <div align="center">Description</div> |
 | :-: | :- |
-| <img src="https://drive.google.com/uc?id=1YpbmDSfN01a3laY0u77Oq8BaNZe7isA1"> | 1. Go to the AWS Console and navigate to **IAM > Users > Create users** |
+| <img src="https://drive.google.com/uc?id=1YpbmDSfN01a3laY0u77Oq8BaNZe7isA1"> | 1. Go to the AWS Console and navigate to **IAM** <br /> 2. Click **Users** <br /> 3. Create **users** |
 | <img src="https://drive.google.com/uc?id=1ygvMzX4X1tPdhVq1PNPsUleYGoaTIh8l"> | 4. Enter a username such as `terraform-challenge`.<br /> 5. Select **Provide user access to the AWS Management Console - optional** to gran console access <br /> 6. Select **I want to create an IAM user** <br /> 7. Set a **Custom password** <br /> 8. Un check **Users must create a new password at next sign-in** <br /> 9. Click **Next** |
 
 </details>
