@@ -9,28 +9,28 @@
 # Challenge Requirements
 
 > The challenge consists of deploying the following components:
->
-> - A VPC using the CIDR block 10.1.0.0/16
-> - Four subnets across two availability zones:
->   - Subnet 1: 10.1.0.0/24 (_public_)
->   - Subnet 2: 10.1.1.0/24 (_public_)
->   - Subnet 3: 10.1.2.0/24 (_private_)
->   - Subnet 4: 10.1.3.0/24 (_private_)
-> - One EC2 instance in subnet 2 (_t2.micro, RedHat Linux, 20 GB_)
-> - An Auto Scaling Group (_ASG_) in subnets 3 and 4 with:
->   - RedHat Linux
->   - Apache installed via user-data
->   - IAM role to read from an S3 bucket "images"
->   - Min: 2 / Max: 6 instances
->   - t2.micro
-> - An Application Load Balancer (_ALB_):
->   - Listens on port 80
->   - Forwards traffic to ASG on port 443
-> - S3 Buckets:
->   - images: with archive/ and memes/ folders (_memes → Glacier after 90 days_)
->   - logs: with active/ and inactive/ folders (_inactive → deleted after 90 days_)
-> - IAM roles:
->   - Allow EC2 and ASG hosts to write logs to the logs buck
+
+| Component | Details |
+| :- | :- |
+| VPC | CIDR block `10.1.0.0/16` |
+| Subnet 1 | `10.1.0.0/24` (Public, AZ1) |
+| Subnet 2 | `10.1.1.0/24` (Public, AZ2) |
+| Subnet 3 | `10.1.2.0/24` (Private, AZ1) |
+| Subnet 4 | `10.1.3.0/24` (Private, AZ2) |
+| EC2 Instance | In Subnet 2, t2.micro, RedHat Linux, 20 GB |
+| Auto Scaling Group | In Subnets 3 and 4, RedHat Linux, Apache via user-data, t2.micro |
+| | IAM role to read from S3 "images", Min: 2 / Max: 6 |
+| Application Load Balancer | Listens on port 80, forwards to ASG on port 443 |
+| S3 Bucket: `images` | Folders: `archive/`, `memes/` (memes → Glacier after 90 days) |
+| S3 Bucket: `logs` | Folders: `active/`, `inactive/` (inactive → delete after 90 days) |
+| IAM Roles | Allow EC2 and ASG to write logs to the `logs` bucket |
+
+<table>
+<tr>
+<td> Note</td>
+<td> The complete and detailed PDF version of the challenge requirements is available in the expandable section below. This includes the original assignment document provided by the company, presented as images hosted on Google Drive for easy reference.</td>
+</tr>
+</table>
 
 <details>
 <summary>AWS Technical Challenge details.</summary>
