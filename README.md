@@ -113,7 +113,7 @@
 <details>
 <summary>Visual Studio Code</summary>
 
-> Visual Studio Code (VS Code) is a recommended text editor for working with Terraform projects.  
+> Visual Studio Code (_VS Code_) is a recommended text editor for working with Terraform projects.  
 >
 > You can download the installer from the official website:  
 > [Download Visual Studio Code](https://code.visualstudio.com/)
@@ -125,29 +125,42 @@
 
 ## Best practices
 
-> Knowing that this challenge is used to determine the skills of a cloud engineer in a work environment, it is recommended, but not mandatory, to follow certain design and security guidelines. Below you can find the necessary configurations on the AWS, GitHub, and Terraform platforms to prepare the environment for running the proof of concept..
+## Best Practices
+
+To align with industry standards and demonstrate a real-world approach to cloud infrastructure design, it's recommended to follow a set of best practices across the platforms used in this challenge. These practices improve **security**, **automation**, and **team collaboration**.
 
 <details>
-<summary>GitHub best practises.</summary>
+<summary>GitHub Best Practices</summary>
 
-1. Create a private repository: The purpose of this is to make it public once you've consolidated the solution.
-2. Create more than one branch: In professional environments, and as best practice, it's not common to work and test in the same environment because it's unsafe and can cause service disruptions. The code produced must be reviewed and approved before merging into the main branch. Therefore, when developing this activity, it was considered to develop it in a branch called DEV, and once the development is complete through a pull request, merge it into main.
-3. Create secrets: Create secrets in the GitHub project to store AWS credentials for remote execution.
+1. **Use private repositories initially** – Keep the repository private while working and only make it public for final submission.
+2. **Work with feature branches** – Use branches like `dev`, `infra`, or `feature/*` to isolate changes, then merge to `main` via Pull Requests.
+3. **Use GitHub Secrets** – Store AWS credentials and other sensitive variables in GitHub Actions Secrets.  
+4. **Enable branch protection** – Protect the `main` branch from force pushes and require reviews before merging.  
 
 </details>
 
 <details>
-<summary>AWS best practises.</summary>
+<summary>AWS Best Practices</summary>
 
-1. Don't use the root user, create an admin account.
-2. Define the authentication method for GitHub.
-3. Create a role for Terraform.
-4. Define policies for the Terraform role, only giving it privileges for what it should do.
-5. Integrate between AWS and GitHub.
-6. Install AWS CLI on Windows 11 to develop locally first.
-7. Install Terraform on Windows 11 to test the code and ensure proper resource provisioning in AWS.
+1. **Avoid using the root account** – Create an admin IAM user for daily operations.
+2. **Use MFA (Multi-Factor Authentication)** – Enforce MFA for all users to protect credentials.
+3. **Assign least-privilege roles** – Give Terraform a role with only the permissions it needs.
+4. **Tag all resources consistently** – Use tags like `Environment`, `Project`, `Owner` to manage billing and organization.
+5. **Authenticate locally with AWS CLI** – Run `aws configure` before testing Terraform locally.
 
 </details>
+
+<details>
+<summary>Terraform Best Practices</summary>
+
+1. **Use a remote backend** – Store the Terraform state in S3.
+2. **Write modular code** – Organize resources in reusable modules for scalability.
+3. **Run format and validation** – Use `terraform fmt` and `terraform validate` on every commit.
+4. **Use variables and outputs** – Externalize configuration and expose useful outputs.
+5. **Pin provider versions** – Lock your provider and Terraform versions in `required_providers`.
+
+</details>
+
 
 <hr />
 
@@ -159,8 +172,12 @@
 
 | Reference | Link | Description |
 | - | - | :- |
-| Terraform  | [A Beginner’s Guide to Installing Terraform on Windows](<https://medium.com/@morsi.masmoudi/a-beginners-guide-to-installing-terraform-on-windows-9321e566893d>) | 
-| Markdown | [Embedding images in google drive to markdown](https://www.intodeeplearning.com/embedding-images-in-google-drive-to-markdown/) |
+| Terraform  | [A Beginner’s Guide to Installing Terraform on Windows](<https://medium.com/@morsi.masmoudi/a-beginners-guide-to-installing-terraform-on-windows-9321e566893d>) | _How to install Terraform_ |
+| Markdown | [Embedding images in google drive to markdown](https://www.intodeeplearning.com/embedding-images-in-google-drive-to-markdown/) | _How to embed images from google cloud using a shared public image_ |
+| GitHub | [Using secrets in GitHub Actions](https://docs.github.com/en/actions/security-guides/encrypted-secrets) | How to create and use secrets on a GitHub Action. |
+| GitHub | [About protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) |
+| AWS | [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) | AWS IAM official best-practises |
+| Terraform | [Remote backends](https://developer.hashicorp.com/terraform/language/state/remote) | To store the TF.state in a remote place |
 
 ## Assumptions made
 
