@@ -246,7 +246,7 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 > We'll walk through the steps to authenticate using AWS CLI, validate the connection, and then proceed to initialize and apply the Terraform code.
 
 <details>
-<summary> <strong>Step 1</strong>: Create a dedicated IAM user for Terraform</summary>
+<summary> <strong>Step 1</strong>: <u>Create a dedicated IAM user for Terraform</u></summary>
 
 <br />
 
