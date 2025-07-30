@@ -128,17 +128,7 @@
 To align with industry standards and demonstrate a real-world approach to cloud infrastructure design, it's recommended to follow a set of best practices across the platforms used in this challenge. These practices improve **security**, **automation**, and **team collaboration**.
 
 <details>
-<summary>GitHub Best Practices</summary>
-
-1. **Use private repositories initially** – Keep the repository private while working and only make it public for final submission.
-2. **Work with feature branches** – Use branches like `dev`, `infra`, or `feature/*` to isolate changes, then merge to `main` via Pull Requests.
-3. **Use GitHub Secrets** – Store AWS credentials and other sensitive variables in GitHub Actions Secrets.  
-4. **Enable branch protection** – Protect the `main` branch from force pushes and require reviews before merging.  
-
-</details>
-
-<details>
-<summary>AWS Best Practices</summary>
+<summary>AWS</summary>
 
 1. **Avoid using the root account** – Create an admin IAM user for daily operations.
 2. **Use MFA (Multi-Factor Authentication)** – Enforce MFA for all users to protect credentials.
@@ -149,7 +139,17 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 </details>
 
 <details>
-<summary>Terraform Best Practices</summary>
+<summary>GitHub</summary>
+
+1. **Use private repositories initially** – Keep the repository private while working and only make it public for final submission.
+2. **Work with feature branches** – Use branches like `dev`, `infra`, or `feature/*` to isolate changes, then merge to `main` via Pull Requests.
+3. **Use GitHub Secrets** – Store AWS credentials and other sensitive variables in GitHub Actions Secrets.  
+4. **Enable branch protection** – Protect the `main` branch from force pushes and require reviews before merging.  
+
+</details>
+
+<details>
+<summary>Terraform</summary>
 
 1. **Use a remote backend** – Store the Terraform state in S3.
 2. **Write modular code** – Organize resources in reusable modules for scalability.
