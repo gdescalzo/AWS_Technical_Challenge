@@ -53,6 +53,26 @@
 
 # Solution overview
 
+```mermaid
+flowchart TD
+    A[VPC 10.1.0.0/16] --> B[Public Subnet 1<br/>10.1.0.0/24 - AZ1]
+    A --> C[Public Subnet 2<br/>10.1.1.0/24 - AZ2]
+    A --> D[Private Subnet 3<br/>10.1.2.0/24 - AZ1]
+    A --> E[Private Subnet 4<br/>10.1.3.0/24 - AZ2]
+    B --> ALB[Application Load Balancer<br/>Port 80]
+    C --> ALB
+    C --> EC2[EC2 Instance<br/>RedHat<br/>t2.micro<br/>Subnet 2]
+    ALB -->|Forwards to port 443| ASG[Auto Scaling Group<br/>Min 2 - Max 6<br/>Apache Installed]
+    ASG --> D
+    ASG --> E
+    ASG -->|IAM Role| S3Images[(S3 Bucket: images)]
+    EC2 -->|IAM Role| S3Logs[(S3 Bucket: logs)]
+    subgraph S3
+        S3Images
+        S3Logs
+    end
+```
+
 > This project is structured as an infrastructure-as-code deployment using Terraform. Two modes of execution are supported:
 
 | <div align="center">Execution Mode</div> | <div align="center">Description</div> |
