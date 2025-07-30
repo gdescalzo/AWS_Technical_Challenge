@@ -268,6 +268,7 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 | <img src="https://drive.google.com/uc?id=1h2NBfsz4bI6-4DRSUNRWUGTdT9XeGGwr"> | 10. Select **Attach policies directly** |
 | <img src="https://drive.google.com/uc?id=1TYV7HHWfz5o55Ery2nYdxRJ9lwAQizfx"> <br /> <img src="https://drive.google.com/uc?id=1msiS3u-dP9_GCumoZMHlxhTMO4bGzNp6"> <br /> <img src="https://drive.google.com/uc?id=1nNrWD39pvhRCCk-BFPMaCbcX4XCWgp__"> <br /> <img src="https://drive.google.com/uc?id=18mrzCibEZGm3Lbuj3lJ1S6_hDNoxHcaB"> <br /> <img src="https://drive.google.com/uc?id=1AzrW1LKWpbpKkX48mV6-pFL2j04VhKCy"> | 11. Attach pre-existing policy `AmazonEC2FullAccess` <br /> 12. Attach pre-existing policy `AmazonS3FullAccess` <br /> 12. Attach pre-existing policy `ElasticLoadBalancingFullAccess` <br /> 13. Attach pre-existing policy `AutoScalingFullAccess` <br /> 14. Attach pre-existing policy `IAMReadOnlyAccess` |
 | <img src="https://drive.google.com/uc?id=1CbgQ0AaK9bxLR_VYoiAvUz8CXLhUdWw9"> | 15. Click **Create user** |
+| <img src="https://drive.google.com/uc?id=1r27kTryQdTfhxm6TwIvhPyf3sVFR-_me"> | 16. Click **Download .csv file** |
 
 </details>
 
