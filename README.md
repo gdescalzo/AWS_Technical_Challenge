@@ -246,7 +246,7 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 > We'll walk through the steps to authenticate using AWS CLI, validate the connection, and then proceed to initialize and apply the Terraform code.
 
 <details>
-<summary> <strong>Step 1</strong>: <u>Create a dedicated IAM user for Terraform</u></summary>
+<summary> <strong>Step 1</strong>: Create a dedicated IAM user for Terraform</summary>
 
 <br />
 
@@ -261,7 +261,7 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 
 **Instructions**:
 
-1. Go to the AWS Console and navigate to **IAM > Users > Create users**. <br />
+1. Go to the AWS Console and navigate to **IAM > Users > Create users**. <br /><br />
    <img src="https://drive.google.com/uc?id=1YpbmDSfN01a3laY0u77Oq8BaNZe7isA1">
 2. Enter a username such as `terraform-challenge`.
 3. Select **Access key – Programmatic access** as the authentication type.
