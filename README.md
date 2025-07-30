@@ -49,9 +49,12 @@
 # Solution overview
 
 > This project is structured as an infrastructure-as-code deployment using Terraform. Two modes of execution are supported:
->
-> 1. Local Execution: Developers can apply infrastructure changes from their local machines using the Terraform CLI.
-> 2. Remote Execution (Improvement Plan): Infrastructure is deployed automatically via GitHub Actions on PR merges.
+
+| Execution Mode | Description |
+| :- | :- |
+| Local Execution | Developers can apply infrastructure changes from their local machines using the Terraform CLI. |
+| Remote Execution | Infrastructure is deployed automatically via GitHub Actions on PR merges. |
+
 
 ## Pre-requisites
 
