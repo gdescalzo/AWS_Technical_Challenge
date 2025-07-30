@@ -181,19 +181,32 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 
 ## Architecture Design
 
-### Design decisions
+> This section outlines the structural and strategic choices made in designing the cloud infrastructure. The goal was to build a scalable, modular, and secure environment that simulates real-world enterprise use cases.
+
+<details>
+<summary> Design decisions</summary>
+
+<br />
 
 > - Modular structure: all core components (_VPC, subnets, IGW, SGs, etc._) are implemented via reusable modules.
 > - CIDR blocks are parameterized to support easy scaling.
 > - High availability is achieved using subnets across two AZs.
 > - ALB to ASG communication uses HTTPS (_443_) for simulated security context
 
-### Assumptions
+</details>
+
+
+<details>
+<summary> Assumptions</summary>
+
+<br />
 
 > - AWS region used is us-east-1.
 > - EC2 AMI for Red Hat Linux is available in the selected region.
 > - Buckets images and logs are created and managed via Terraform.
 > - Apache installed via user-data shell script.
+
+</details>
 
 ## Deployment Instructions
 
