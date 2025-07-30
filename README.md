@@ -169,7 +169,6 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 
 | <div align="center">Practice</div> | <div align="center">Description</div> |
 | :- | :- |
-| Use MFA (Multi-Factor Authentication) | Add an extra layer of protection to your IAM accounts. |
 | Use IAM roles for automation | Create a dedicated role for Terraform with least-privilege permissions. This improves security and aligns with the principle of least privilege. |
 | Tag resources consistently | Apply tags like `Environment`, `Project`, `Owner` for resource management and billing. |
 | Integrate AWS CLI locally | Use `aws configure` to authenticate and test infrastructure outside the web console. |
