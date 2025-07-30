@@ -169,9 +169,8 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 
 | <div align="center">Practice</div> | <div align="center">Description</div> |
 | :- | :- |
-| Avoid using the root user | Create IAM users or roles for all activity. |
 | Use MFA (Multi-Factor Authentication) | Add an extra layer of protection to your IAM accounts. |
-| Use IAM roles for automation | Create a dedicated role for Terraform with least-privilege permissions. |
+| Use IAM roles for automation | Create a dedicated role for Terraform with least-privilege permissions. This improves security and aligns with the principle of least privilege. |
 | Tag resources consistently | Apply tags like `Environment`, `Project`, `Owner` for resource management and billing. |
 | Integrate AWS CLI locally | Use `aws configure` to authenticate and test infrastructure outside the web console. |
 
@@ -245,6 +244,23 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 > If you haven't configured the AWS CLI yet, this is the first step to complete. Once your credentials are set, you will be able to execute terraform commands that interact directly with your AWS account.
 >
 > We'll walk through the steps to authenticate using AWS CLI, validate the connection, and then proceed to initialize and apply the Terraform code.
+
+<details>
+<summary> Step 1: Create a dedicated IAM user for Terraform</summary>
+
+> To follow security best practices, avoid using the AWS root account or administrator accounts for automation tasks. Instead, create a dedicated IAM user with limited permissions for Terraform.
+> We'll create this user using the AWS Console (_GUI_).
+
+**Instructions**:
+
+1. Go to the AWS Console and navigate to **IAM > Users > Create users**.
+   <img src="https://drive.google.com/uc?id=1YpbmDSfN01a3laY0u77Oq8BaNZe7isA1">
+2. Enter a username such as `terraform-challenge`.
+3. Select **Access key – Programmatic access** as the authentication type.
+4. Click **Next** to configure permissions.
+
+</details>
+
 
 ## References to resources used
 
