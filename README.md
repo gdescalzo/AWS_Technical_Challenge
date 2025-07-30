@@ -58,13 +58,16 @@
 
 ## Pre-requisites
 
-> Please find bellow the pre-requisites
+> Before deploying the infrastructure, ensure your local development environment has the necessary tools and accounts configured. Each of the following prerequisites includes links to the documentation or installers to facilitate setup.
 
 <details>
 <summary>GitHub account</summary>
 
-> The GitHub account is easly to be created, just go to [www.github.com](https://www.github.com).
-> If you need more information about the GitHub account creation process, please refer to: [Creating an account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
+> To complete this challenge, you will need a GitHub account to store your code and version history.
+>
+> You can create an account by visiting [www.github.com](https://www.github.com).
+> For detailed instructions on how to create a GitHub account, refer to the official documentation:  
+> [Creating an account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
 
 </details>
 
