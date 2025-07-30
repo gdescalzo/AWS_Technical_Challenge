@@ -250,8 +250,14 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 
 <br />
 
-> To follow security best practices, avoid using the AWS root account or administrator accounts for automation tasks. Instead, create a dedicated IAM user with limited permissions for Terraform.
-> We'll create this user using the AWS Console (_GUI_).
+<table>
+<tr>
+<td>
+To follow security best practices, avoid using the AWS root account or administrator accounts for automation tasks. Instead, create a dedicated IAM user with limited permissions for Terraform.
+We'll create this user using the AWS Console (_GUI_).
+</td>
+</tr>
+</table>
 
 **Instructions**:
 
