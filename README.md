@@ -83,6 +83,19 @@
 
 </details>
 
+<details>
+<summary>AWS CLI</summary>
+
+> The AWS Command Line Interface (CLI) allows you to interact with AWS services directly from your terminal, which is essential for authentication, configuration, and operational tasks during local development.
+>
+> Download and install the AWS CLI by following the instructions here:  
+> [Installing the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+>
+> For a quick setup and basic usage guide, refer to:  
+> [AWS CLI Getting Started Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html)
+
+</details>
+
 
 <details>
 <summary>Terraform</summary>
@@ -109,7 +122,6 @@
 > [Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows)
 
 </details>
-
 
 ## Best practices
 
