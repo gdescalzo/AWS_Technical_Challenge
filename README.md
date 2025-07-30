@@ -234,6 +234,8 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 
 </details>
 
+<hr />
+
 ## Deployment Instructions
 
 > Before running the Terraform configuration, it's important to prepare your local environment by setting up AWS credentials via the AWS CLI. This allows Terraform to authenticate with AWS and provision infrastructure.
@@ -255,8 +257,6 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 </td>
 </tr>
 </table>
-
-<hr />
 
 **Instructions**:
 
