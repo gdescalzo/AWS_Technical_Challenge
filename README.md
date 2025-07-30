@@ -277,9 +277,12 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 | Capture | <div align="center">Description</div> |
 | :-: | :- |
 | <img src="https://drive.google.com/uc?id=1E4wpN4--sj1eDn7XJd_kTxP0HlWxEbG0"> | 1. Navigate to **IAM** <br /> 2. Click **Users** <br /> 3. Click on `terraform-challenge` user. |
+| <img src="https://drive.google.com/uc?id=1-8YRP-BcHLK9hmFJfoWnurv9gXPpOR8R"> | 4. Click **Create access key** |
+| <img src="https://drive.google.com/uc?id=1e-vDkgfrBw-6U6BYtdEJg3LOHdVcU_fx"> | 5. Click **Command line interface** <br /> 6. Check the **Confirmation** <br /> 7. Click **Next** |
+| <img src="https://drive.google.com/uc?id=18CS7coBzgoA8SZOHUF_qxqTW82FuOzA4"> | 8. Click **Create access key** |
+| <img src="https://drive.google.com/uc?id=1umv4eGPX5lwgyAW6jxKBYEghglDmA3uE"> | 9. Click **Done** (_important, copy the credentials generated_) |
 
 </details>
-
 
 ## References to resources used
 
