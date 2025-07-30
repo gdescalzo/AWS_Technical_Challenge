@@ -63,6 +63,9 @@
 ## Infrastructure Diagram
 
 ```mermaid
+### 3.3. Infrastructure Diagram (Mermaid)
+
+```mermaid
 graph TB
     Internet((Internet)) --> IGW[Internet Gateway]
     IGW --> VPC[VPC 10.1.0.0/16]
@@ -85,10 +88,11 @@ graph TB
     ASG -->|IAM| Images[(S3: images)]
     EC2 -->|IAM| Logs[(S3: logs)]
 
-    subgraph S3 Buckets
+    subgraph S3_Buckets
         Images
         Logs
     end
+
 ```
 
 ## Pre-requisites
