@@ -63,36 +63,25 @@
 ## Infrastructure Diagram
 
 ```mermaid
-### 3.3. Infrastructure Diagram (Mermaid)
-
-```mermaid
-graph TB
+flowchart TD
     Internet((Internet)) --> IGW[Internet Gateway]
-    IGW --> VPC[VPC 10.1.0.0/16]
-
-    VPC --> Pub1[Public Subnet 1<br/>10.1.0.0/24 - AZ1]
-    VPC --> Pub2[Public Subnet 2<br/>10.1.1.0/24 - AZ2]
-    VPC --> Priv1[Private Subnet 3<br/>10.1.2.0/24 - AZ1]
-    VPC --> Priv2[Private Subnet 4<br/>10.1.3.0/24 - AZ2]
-
-    Pub1 --> ALB[ALB (Port 80)]
-    Pub2 --> ALB
-
-    Pub2 --> EC2[EC2 Instance<br/>RedHat<br/>t2.micro]
-
-    ALB -->|Port 443| ASG[Auto Scaling Group<br/>2–6 EC2<br/>Apache]
-
-    ASG --> Priv1
-    ASG --> Priv2
-
-    ASG -->|IAM| Images[(S3: images)]
-    EC2 -->|IAM| Logs[(S3: logs)]
-
-    subgraph S3_Buckets
-        Images
-        Logs
+    IGW --> A[VPC 10.1.0.0/16]
+    A --> B[Public Subnet 1<br/>10.1.0.0/24 - AZ1]
+    A --> C[Public Subnet 2<br/>10.1.1.0/24 - AZ2]
+    A --> D[Private Subnet 3<br/>10.1.2.0/24 - AZ1]
+    A --> E[Private Subnet 4<br/>10.1.3.0/24 - AZ2]
+    B --> ALB[Application Load Balancer<br/>Port 80]
+    C --> ALB
+    C --> EC2[EC2 Instance<br/>RedHat<br/>t2.micro<br/>Subnet 2]
+    ALB -->|Forwards to port 443| ASG[Auto Scaling Group<br/>Min 2 - Max 6<br/>Apache Installed]
+    ASG --> D
+    ASG --> E
+    ASG -->|IAM Role| S3Images[(S3 Bucket: images)]
+    EC2 -->|IAM Role| S3Logs[(S3 Bucket: logs)]
+    subgraph S3
+        S3Images
+        S3Logs
     end
-
 ```
 
 ## Pre-requisites
