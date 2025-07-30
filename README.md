@@ -276,6 +276,7 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 
 | Capture | <div align="center">Description</div> |
 | :-: | :- |
+| <img src="https://drive.google.com/uc?id=1E4wpN4--sj1eDn7XJd_kTxP0HlWxEbG0"> | 1. Navigate to **IAM** <br /> 2. Click **Users** <br /> 3. Click on `terraform-challenge` user. |
 
 </details>
 
