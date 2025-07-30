@@ -181,7 +181,7 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 
 ## Architecture Design
 
-### Design decisions 
+### Design decisions
 
 > - Modular structure: all core components (VPC, subnets, IGW, SGs, etc.) are implemented via reusable modules.
 > - CIDR blocks are parameterized to support easy scaling.
