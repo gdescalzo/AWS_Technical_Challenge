@@ -256,6 +256,8 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 </tr>
 </table>
 
+<hr />
+
 **Instructions**:
 
 > **User creation**
