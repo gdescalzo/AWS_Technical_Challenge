@@ -135,11 +135,16 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 <details>
 <summary>AWS</summary>
 
-1. **Avoid using the root account** – Create an admin IAM user for daily operations.
-2. **Use MFA (Multi-Factor Authentication)** – Enforce MFA for all users to protect credentials.
-3. **Assign least-privilege roles** – Give Terraform a role with only the permissions it needs.
-4. **Tag all resources consistently** – Use tags like `Environment`, `Project`, `Owner` to manage billing and organization.
-5. **Authenticate locally with AWS CLI** – Run `aws configure` before testing Terraform locally.
+<br />
+
+| <div align="center">Practice</div> | <div align="center">Description</div> |
+| :- | :- |
+| Avoid using the root user | Create IAM users or roles for all activity. |
+| Use MFA (Multi-Factor Authentication) | Add an extra layer of protection to your IAM accounts. |
+| Use IAM roles for automation | Create a dedicated role for Terraform with least-privilege permissions. |
+| Tag resources consistently | Apply tags like `Environment`, `Project`, `Owner` for resource management and billing. |
+| Integrate AWS CLI locally | Use `aws configure` to authenticate and test infrastructure outside the web console. |
+
 
 </details>
 
@@ -160,11 +165,15 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 <details>
 <summary>Terraform</summary>
 
-1. **Use a remote backend** – Store the Terraform state in S3.
-2. **Write modular code** – Organize resources in reusable modules for scalability.
-3. **Run format and validation** – Use `terraform fmt` and `terraform validate` on every commit.
-4. **Use variables and outputs** – Externalize configuration and expose useful outputs.
-5. **Pin provider versions** – Lock your provider and Terraform versions in `required_providers`.
+<br />
+
+| Practice | Description |
+| :- | :- |
+| Use a remote backend | Store the Terraform state in S3. |
+| Write modular code | Organize resources in reusable modules for scalability. |
+| Run format and validation | Use `terraform fmt` and `terraform validate` on every commit. |
+| Use variables and outputs | Externalize configuration and expose useful outputs. |
+| Pin provider versions |  Lock your provider and Terraform versions in `required_providers`. |
 
 </details>
 
