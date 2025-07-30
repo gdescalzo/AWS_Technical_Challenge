@@ -305,6 +305,7 @@ Once the access key and secret access key for your `terraform-challenge` user ha
    - ~/.aws/config
 
    _If successful, this will return your AWS account and IAM user information._
+   <img src="https://drive.google.com/uc?id=1BVFPl81HUluuAKwmtRWRMoNVtpC-MXIS">
 
 </details> 
 
