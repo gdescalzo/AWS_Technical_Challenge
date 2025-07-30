@@ -143,10 +143,10 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 
 | <div align="center">Practice</div> | <div align="center">Description</div> |
 | :- | :- |
-| **Use private repositories initially** | Keep the repository private while working and only make it public for final submission.           |
-| **Work with feature branches**         | Use branches like `dev`, `infra`, or `feature/*` to isolate changes, then merge to `main` via Pull Requests. |
-| **Use GitHub Secrets**                | Store AWS credentials and other sensitive variables in GitHub Actions Secrets. [Docs](https://docs.github.com/en/actions/security-guides/encrypted-secrets) |
-| **Enable branch protection**          | Protect the `main` branch from force pushes and require reviews before merging. [Docs](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-protected-branches) |
+| Use private repositories initially** | Keep the repository private while working and only make it public for final submission.           |
+| Work with feature branches | Use branches like `dev`, `infra`, or `feature/*` to isolate changes, then merge to `main` via Pull Requests. |
+| Use GitHub Secrets| Store AWS credentials and other sensitive variables in GitHub Actions Secrets. |
+| Enable branch protection | Protect the `main` branch from force pushes and require reviews before merging. |
 
 
 </details>
