@@ -261,7 +261,9 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 
 **Instructions**:
 
-| Step | <div align="center">Description</div> |
+> Terraform user creation
+
+| Capture | <div align="center">Description</div> |
 | :-: | :- |
 | <img src="https://drive.google.com/uc?id=1YpbmDSfN01a3laY0u77Oq8BaNZe7isA1"> | 1. Go to the AWS Console and navigate to **IAM** <br /> 2. Click **Users** <br /> 3. Create **users** |
 | <img src="https://drive.google.com/uc?id=1ygvMzX4X1tPdhVq1PNPsUleYGoaTIh8l"> | 4. Enter a username such as `terraform-challenge`.<br /> 5. Select **Provide user access to the AWS Management Console - optional** to gran console access <br /> 6. Select **I want to create an IAM user** <br /> 7. Set a **Custom password** <br /> 8. Un check **Users must create a new password at next sign-in** <br /> 9. Click **Next** |
@@ -269,6 +271,11 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 | <img src="https://drive.google.com/uc?id=1TYV7HHWfz5o55Ery2nYdxRJ9lwAQizfx"> <br /> <img src="https://drive.google.com/uc?id=1msiS3u-dP9_GCumoZMHlxhTMO4bGzNp6"> <br /> <img src="https://drive.google.com/uc?id=1nNrWD39pvhRCCk-BFPMaCbcX4XCWgp__"> <br /> <img src="https://drive.google.com/uc?id=18mrzCibEZGm3Lbuj3lJ1S6_hDNoxHcaB"> <br /> <img src="https://drive.google.com/uc?id=1AzrW1LKWpbpKkX48mV6-pFL2j04VhKCy"> | 11. Attach pre-existing policy `AmazonEC2FullAccess` <br /> 12. Attach pre-existing policy `AmazonS3FullAccess` <br /> 12. Attach pre-existing policy `ElasticLoadBalancingFullAccess` <br /> 13. Attach pre-existing policy `AutoScalingFullAccess` <br /> 14. Attach pre-existing policy `IAMReadOnlyAccess` |
 | <img src="https://drive.google.com/uc?id=1CbgQ0AaK9bxLR_VYoiAvUz8CXLhUdWw9"> | 15. Click **Create user** |
 | <img src="https://drive.google.com/uc?id=1r27kTryQdTfhxm6TwIvhPyf3sVFR-_me"> | 16. Click **Download .csv file** |
+
+> Access Key creation
+
+| Capture | <div align="center">Description</div> |
+| :-: | :- |
 
 </details>
 
