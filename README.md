@@ -464,11 +464,29 @@ terraform destroy --var-file="terraform.tfvars"
 | Mermaid | [Infrastructure Diagram](https://mermaid.live/edit#pako:eNp1km9vmzAQxr-K5VeJlFCDIaRoqkT-jEVKpKhMq1SyFw64BBVs5JilbZLvPmNCUzLNMpKfx_e7O584wpgnFHrwJeeHeEeEBD9nGwbUWjBJBaOy12tP_T4YDh_AIniKWgsERNIDef99YYInHeJHv9ZTYCLDNJCB7szR5d7Xt5NoXW3zLAZhta1zmN-24u7hM9qywRD4z2aHmd4w1pUxr4zVYWbRWmR_VIMthK-Q9b9C81vIvkL430qT5r3LSeSXpeqPyIwzsOQkAROSExZTofk1V6Mdows1bamvcj61IvWpwe9lDWrukSY_iNRHaRlFFguuRTuGtvelbuT0nYsDEckeSA7KuqRt4xPwwyDyK2WFMckzloJA8KrUeVYZA5Z60Yq8gZF2_JLEO9p0kec0aSuEQTPUrpx35Gnhr8Ajz-kJhHhRkJTuo16IwaSKX6n0QKat_iVl_dhbaMnTLpIrowX21TYVpNypuMaoV1voq1NnaTRlCRzAVGQJ9KSo6AAWVBSklvBYh2yg3NGCbqCnjgkRrxu4YWfFlIQ9c160mJpYuoPeC8n3SlVlon6RWUZUP8WnK1Q1Kqa8YhJ6lqNzQO8I36CHHdfA9wgjV-0RGrkD-K7ckaEMEzvmeGwiG7nOeQA_dFVkjF0HqeXcW7aDTYTPfwEBtw6k) | Online tool to create Mermaid diagrams. |
 | HTML | [HTML Generator](https://divtable.com/generator/) | Online tool to create HTML tables. |
 
-## Assumptions made
+<hr />
 
-## Improvement plan with priorities
+### Improvement Plan with Priorities
 
-## Analysis of operational gaps
+This section outlines potential enhancements for the current Terraform project, ordered by priority:
+
+#### 🥇 High Priority
+
+- **Implement Auto Scaling Group (ASG):** Automate instance scaling based on load to increase availability and reduce costs.
+- **Introduce Load Balancer (ALB):** Add an Application Load Balancer to distribute traffic across multiple EC2 instances.
+- **Create Launch Template Module:** Define a reusable launch template for consistent instance configurations within the ASG.
+
+#### 🥈 Medium Priority
+
+- **Parameterize More Variables:** Make additional settings configurable, such as tags, user data scripts, and allowed CIDRs in security groups.
+- **Add Outputs for More Resources:** Include subnet IDs, route table IDs, and IAM role ARNs to facilitate integration with other modules or systems.
+- **Improve Variable Validation:** Use `validation` blocks in variables to ensure safer input values.
+
+#### 🥉 Low Priority
+
+- **Add Unit Testing (e.g. using `terratest` or `kitchen-terraform`):** Validate infrastructure logic through automated testing.
+- **Enable Remote Backend:** Configure a remote backend (e.g. S3 + DynamoDB) for collaboration and state locking.
+- **Support for Multiple Environments:** Structure the project to handle separate configurations for `dev`, `staging`, and `prod`.
 
 ## Terraform Configuration
 
