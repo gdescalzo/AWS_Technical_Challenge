@@ -490,10 +490,63 @@ This section outlines potential enhancements for the current Terraform project, 
 
 ## Terraform Configuration
 
-> This project follows a modular structure using Terraform modules to logically separate each component of the infrastructure. Below is a description of each module:
+This project follows a modular structure using Terraform modules to logically <br>
+separate each component of the infrastructure. Below is a description of each module
+
+```bash
+│   .gitignore
+│   main.tf
+│   outputs.tf
+│   README.md
+│   terraform.tfvars
+│   variables.tf
+│
+└───modules
+    ├───ec2_instance
+    │       main.tf
+    │       output.tf
+    │       user_data.sh
+    │       variables.tf
+    │
+    ├───iam_roles
+    │       main.tf
+    │       output.tf
+    │       variables.tf
+    │
+    ├───igw
+    │       main.tf
+    │       output.tf
+    │       variables.tf
+    │
+    ├───key_pair
+    │       main.tf
+    │       output.tf
+    │       variables.tf
+    │
+    ├───routing_table
+    │       main.tf
+    │       output.tf
+    │       variables.tf
+    │
+    ├───sg
+    │       main.tf
+    │       output.tf
+    │       variables.tf
+    │
+    ├───subnets
+    │       main.tf
+    │       outputs.tf
+    │       variables.tf
+    │
+    └───vpc
+            main.tf
+            outputs.tf
+            variables.tf
+```
+
 
 <details>
-<summary>Root Module (`/`)</summary>
+<summary>Root module (`/`)</summary>
 
 > The root module coordinates the deployment by calling the child modules and passing necessary variables.
 
@@ -510,7 +563,7 @@ It includes:
 </details>
 
 <details>
-<summary>Child Modules (`/modules`) </summary>
+<summary>Child modules (`/modules`) </summary>
 
 > Each module represents a distinct part of the infrastructure:
 
