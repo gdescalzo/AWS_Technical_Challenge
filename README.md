@@ -319,10 +319,7 @@ Once the access key and secret access key for your `terraform-challenge` user ha
 <summary><strong>Step 3</strong>: Clone the Repository and Deploy the Infrastructure</summary>
 
 <br />
-### Step 3: Clone and Deploy the Terraform Code
-
 > Once your AWS CLI is configured, you can proceed to clone the repository and deploy the infrastructure:
-
 
 <table>
 <tbody>
