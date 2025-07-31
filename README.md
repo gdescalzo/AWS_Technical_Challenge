@@ -315,6 +315,110 @@ Once the access key and secret access key for your `terraform-challenge` user ha
 
 </details> 
 
+<details>
+<summary><strong>Step 3</strong>: Clone the Repository and Deploy the Infrastructure</summary>
+
+<br />
+### Step 3: Clone and Deploy the Terraform Code
+
+> Once your AWS CLI is configured, you can proceed to clone the repository and deploy the infrastructure:
+
+
+<table>
+<tbody>
+<tr>
+<td>
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/gdescalzo/AWS_Technical_Challenge.git
+   cd AWS_Technical_Challenge
+   ```
+
+</td>
+
+<td>
+
+<img src="https://drive.google.com/uc?id=10S0IA-UoOkTCPq_re5TFRGMyWPwsOKr7">
+
+</td>
+</tr>
+<tr>
+<td>
+
+2. Install Terraform dependencies:
+   _Initialize the working directory to download the required Terraform providers and modules._
+
+   ```bash
+   terraform init
+   ```
+
+</td>
+<td>
+
+<img src="https://drive.google.com/uc?id=16z8GUe4_EIO_OIZD863bQ1XYDPrKCuVx">
+
+</td>
+</tr>
+<tr>
+<td>
+
+3. Validate the configuration:
+   _Ensure that the syntax and structure are valid before running the plan._
+
+   ```bash
+   terraform validate
+   ```
+
+</td>
+<td>
+
+<img src="https://drive.google.com/uc?id=1Wii0zoUXStKEeVX9veRncW3n3MnnaV-C">
+
+</td>
+</tr>
+<tr>
+<td>
+
+4. Review the execution plan:
+   _This command shows what Terraform will do before applying changes._
+
+    ```bash
+    terraform plan --var-file="terraform.tfvars"
+    ```
+
+</td>
+<td>
+
+<img src="https://drive.google.com/uc?id=14zunQB_rR1zue_taYBp3WpgShtG5f_fC"><br />
+<img src="https://drive.google.com/uc?id=14-W81mIbjfYzCkmMpTw1MW2UFAevilG1">
+
+</td>
+</tr>
+<tr>
+<td>
+
+5. Apply the configuration:
+   _Create the infrastructure on AWS._
+
+   ```bash
+   terraform apply --var-file="terraform.tfvars"
+   ```
+
+</td>
+<td>
+
+<img src="https://drive.google.com/uc?id=1fF5TKUi6hXiUqyRNC4rKHm9n4WzFhk4R"><br />
+<img src="https://drive.google.com/uc?id=1XUz2rqRnffXYuKUicij8C-1OoiN0nTaY">
+
+</td>
+
+</tbody>
+</table>
+
+</details>
+
 <hr />
 
 ## References to resources used
