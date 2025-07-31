@@ -218,6 +218,11 @@ To align with industry standards and demonstrate a real-world approach to cloud 
 > - CIDR blocks are parameterized to support easy scaling.
 > - High availability is achieved using subnets across two AZs.
 > - ALB to ASG communication uses HTTPS (_443_) for simulated security context
+> - Although private subnets (_sub3 and sub4_) are part of the architecture, the challenge requirements do not specify that EC2 instances within them must access the internet.
+> - Therefore, no NAT Gateway was provisioned in this solution. This reduces cost and complexity.
+> - If future internet access is required for updates, patching, or external communication from private subnets, a NAT Gateway could be added and routed accordingly.
+> - The current setup assumes that instances in private subnets (such as the Auto Scaling Group instances) only require internal communication and receive HTTP traffic from the Application Load Balancer.
+
 
 </details>
 
