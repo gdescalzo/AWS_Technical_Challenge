@@ -451,28 +451,6 @@ terraform destroy --var-file="terraform.tfvars"
 
 <hr />
 
-### Improvement Plan with Priorities
-
-This section outlines potential enhancements for the current Terraform project, ordered by priority:
-
-#### 🥇 High Priority
-
-- **Implement Auto Scaling Group (ASG):** Automate instance scaling based on load to increase availability and reduce costs.
-- **Introduce Load Balancer (ALB):** Add an Application Load Balancer to distribute traffic across multiple EC2 instances.
-- **Create Launch Template Module:** Define a reusable launch template for consistent instance configurations within the ASG.
-
-#### 🥈 Medium Priority
-
-- **Parameterize More Variables:** Make additional settings configurable, such as tags, user data scripts, and allowed CIDRs in security groups.
-- **Add Outputs for More Resources:** Include subnet IDs, route table IDs, and IAM role ARNs to facilitate integration with other modules or systems.
-- **Improve Variable Validation:** Use `validation` blocks in variables to ensure safer input values.
-
-#### 🥉 Low Priority
-
-- **Add Unit Testing (e.g. using `terratest` or `kitchen-terraform`):** Validate infrastructure logic through automated testing.
-- **Enable Remote Backend:** Configure a remote backend (e.g. S3 + DynamoDB) for collaboration and state locking.
-- **Support for Multiple Environments:** Structure the project to handle separate configurations for `dev`, `staging`, and `prod`.
-
 ## Terraform Configuration
 
 This project follows a modular structure using Terraform modules to logically <br>
@@ -590,6 +568,30 @@ It includes:
 </details>
 
 _Each module is designed to be reusable and loosely coupled, making it easy to manage and scale._
+
+<hr />
+
+### Improvement Plan with Priorities
+
+This section outlines potential enhancements for the current Terraform project, ordered by priority:
+
+#### 🥇 High Priority
+
+- **Implement Auto Scaling Group (ASG):** Automate instance scaling based on load to increase availability and reduce costs.
+- **Introduce Load Balancer (ALB):** Add an Application Load Balancer to distribute traffic across multiple EC2 instances.
+- **Create Launch Template Module:** Define a reusable launch template for consistent instance configurations within the ASG.
+
+#### 🥈 Medium Priority
+
+- **Parameterize More Variables:** Make additional settings configurable, such as tags, user data scripts, and allowed CIDRs in security groups.
+- **Add Outputs for More Resources:** Include subnet IDs, route table IDs, and IAM role ARNs to facilitate integration with other modules or systems.
+- **Improve Variable Validation:** Use `validation` blocks in variables to ensure safer input values.
+
+#### 🥉 Low Priority
+
+- **Add Unit Testing (e.g. using `terratest` or `kitchen-terraform`):** Validate infrastructure logic through automated testing.
+- **Enable Remote Backend:** Configure a remote backend (e.g. S3 + DynamoDB) for collaboration and state locking.
+- **Support for Multiple Environments:** Structure the project to handle separate configurations for `dev`, `staging`, and `prod`.
 
 <hr />
 
