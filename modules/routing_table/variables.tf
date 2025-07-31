@@ -8,12 +8,12 @@ variable "igw_id" {
   type        = string
 }
 
-variable "public_subnet_ids" {
-  description = "List of public subnet IDs to associate with the route table"
-  type        = list(string)
-}
-
 variable "route_table_name" {
   description = "Name tag for the route table"
   type        = string
+}
+
+variable "public_subnet_map" {
+  description = "Map of public subnet names to IDs"
+  type        = map(string)
 }

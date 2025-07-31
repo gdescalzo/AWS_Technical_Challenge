@@ -12,8 +12,9 @@ resource "aws_route_table" "public" {
 }
 
 resource "aws_route_table_association" "public" {
-  for_each = toset(var.public_subnet_ids)
+  for_each = var.public_subnet_map
 
   subnet_id      = each.value
   route_table_id = aws_route_table.public.id
 }
+

@@ -23,11 +23,15 @@ module "igw" {
 }
 
 module "routing_table" {
-  source             = "./modules/routing_table"
-  vpc_id             = module.vpc.vpc_id
-  igw_id             = module.igw.igw_id
-  public_subnet_ids  = module.subnets.public_subnet_ids
-  route_table_name   = "main_public_rt"
+  source = "./modules/routing_table"
+
+  vpc_id           = module.vpc.vpc_id
+  igw_id           = module.igw.igw_id
+  route_table_name = "main_public_rt"
+  public_subnet_map = {
+    subnet_az1 = module.subnets.public_subnet_ids[0]
+    subnet_az2 = module.subnets.public_subnet_ids[1]
+  }
 }
 
 module "security_groups" {
