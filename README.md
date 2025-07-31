@@ -470,108 +470,67 @@ terraform destroy --var-file="terraform.tfvars"
 
 ## Analysis of operational gaps
 
-## Solutions Diagram
+## Terraform Configuration
 
-| **Clarification**: The following SD is properly formatted and styled diagram against AWS diagram standards. |
-|-|
+> This project follows a modular structure using Terraform modules to logically separate each component of the infrastructure. Below is a description of each module:
 
-**Content**
+<details>
+<summary>Root Module (`/`)</summary>
 
-o All deployed components identified
-o Connectivity/dataflow’s identified
+> The root module coordinates the deployment by calling the child modules and passing necessary variables.
 
-## Terraform configurations
+It includes:
 
-Please find below Terraform solution diagram content
-
-
-
-
-- [VPC Launch](#vpc-launch)
-  - [VPC Components](#vpc-components)
-  - [Terraform Modules](#terraform-modules)
-
-  <hr />
-
-# VPC Launch
-
-> This repo insted to had a basic network infrastructure. The basical idea it´s have two Subnets, one public and other privated with an Internet gateway (_igw_) connected to the public one. And the routing table that permit 0.0.0.0/0 traffic between the public subnet and the igw.
-
-An overview of what will be created on AWS onece execute the terraform manifiest.
-
-![vpc_map.png](./img/vpc_map.png)
-
-## VPC Components
-
-1. VPC (_10.0.0.0/16_)
-2. Public Subnet (_10.0.1.0/24_)
-3. Private Subnet (_10.0.2.0/24_)
-4. Public Routing Table (_Public Subnet <-> 0.0.0.0/0_)
-5. Security group (_Allow traffic to '80','443','22','3389'_)
-
-### VPC
-
-> This module will help you to create a default VPC, with a default addressing (10.0.0.0/16) no bigger configurations should have to do here only you can change the Region and the addres that you want from here
-
-```
-\
-│   main.tf
-│   outputs.tf
-│   README.md
-│   variables.tf <-- HERE you can change the VPC addressing and the Region.
-│ 
-```
-
-### Public Subnet
-
-> This subnet at the moment to be created is just a privated subnet with the name "public", only will be public if is associated to an Internet Gateway for example.
-> The creation and modification over the public subnete, can be made on the "variables.tf" root file, you can change the IP, Name and Availability Zone.
-
-```
-\
-│   main.tf
-│   outputs.tf
-│   README.md
-│   variables.tf <-- HERE you can change the Public Subnets configuration.
-│ 
-```
+| <div align="center">File Name</div> | <div align="center">Description</div> |
+|:-|:-|
+| `main.tf` | Invokes all modules and defines dependencies |
+| `variables.tf` | Defines input variables |
+| `terraform.tfvars` | Stores the values for the variables |
+| `outputs.tf` | Exposes key outputs from the deployment |
 
 
-## Terraform Modules
+</details>
 
-```
-\
-│   main.tf
-│   outputs.tf
-│   README.md
-│   variables.tf
-│   
-├───img
-│       vpc_map.png
-│
-└───modules
-    ├───igw
-    │       main.tf
-    │       outputs.tf
-    │       variables.tf
-    │
-    ├───routing_table
-    │       main.tf
-    │       outputs.tf
-    │       variables.tf
-    │
-    ├───sg
-    │       main.tf
-    │       outputs.tf
-    │       variables.tf
-    │
-    ├───subnets
-    │       main.tf
-    │       output.tf
-    │       variables.tf
-    │
-    └───vpc
-            main.tf
-            output.tf
-            variables.tf
-```
+<details>
+<summary>Child Modules (`/modules`) </summary>
+
+> Each module represents a distinct part of the infrastructure:
+
+| <div align="center">Module Name | <div align="center">Description |
+|:-|:-|
+| `vpc/` | Creates a custom VPC with DNS support enabled. |
+| `subnets/` | Creates 2 public and 2 private subnets in AZs `us-east-1a` and `us-east-1b`. |
+| `igw/` | Creates an Internet Gateway and attaches it to the VPC. |
+| `routing_table/` | Creates a route table for the public subnets and associates it with them. |
+| `sg/` | Defines 3 security groups:<br>• `alb-sg`: HTTP from anywhere<br>• `asg-sg`: HTTPS from ALB<br>• `ec2-sg`: SSH from the internet |
+| `key_pair/` | Generates an SSH key pair using `tls_private_key` and uploads it to AWS with `aws_key_pair`. |
+| `iam_roles/` | Creates an IAM Role and Instance Profile with `AmazonEC2ReadOnlyAccess` policy for EC2. |
+| `ec2_instance/` | Launches a single RedHat EC2 instance in a public subnet using SG, IAM Role, and SSH key. |
+
+</details>
+
+<details>
+<summary>Variables</summary>
+
+> The following table outlines the most relevant input variables used to customize the infrastructure. These variables are defined in `variables.tf`, and their values are set in `terraform.tfvars`.
+
+
+| <div align="center">Variable Name</div> | <div align="center">Description</div> | Type |
+|:-|:-|:-:|
+| `vpc_name` | Nombre de la VPC | string |
+| `cidr_block` | Rango CIDR para la VPC | string   |
+| `public_subnet_cidrs` | Lista de CIDR blocks para las subnets públicas | list |
+| `private_subnet_cidrs` | Lista de CIDR blocks para las subnets privadas | list |
+| `public_subnet_azs` | Lista de zonas de disponibilidad para subnets públicas | list |
+| `private_subnet_azs` | Lista de zonas de disponibilidad para subnets privadas | list |
+| `igw_name` | Nombre del Internet Gateway | string |
+| `redhat_ami_id` | ID de la imagen AMI de RedHat | string |
+| `redhat_instance_type` | Tipo de instancia EC2 para RedHat | string |
+| `key_name` | Nombre del key pair SSH | string |
+| `asg_instance_name` | Nombre de las instancias del Auto Scaling Group (tag Name) | string |
+| `asg_instance_type` | Tipo de instancia EC2 para el ASG | string |
+| `asg_launch_template_name` | Nombre del launch template usado por el ASG | string |
+
+</details>
+
+_Each module is designed to be reusable and loosely coupled, making it easy to manage and scale._

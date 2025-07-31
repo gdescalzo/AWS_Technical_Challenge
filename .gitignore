@@ -4,6 +4,7 @@
 *.tfvars.json
 *.terraform.lock.hcl
 *.tfstate.lock.info
+*.lock.hcl
 *.log
 *.bak
 *.swp
