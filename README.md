@@ -447,6 +447,7 @@ terraform destroy --var-file="terraform.tfvars"
 </tbody>
 </table>
 
+</details>
 
 <hr />
 
