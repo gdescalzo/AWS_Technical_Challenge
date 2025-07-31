@@ -18,3 +18,8 @@ output "alb_sg_id" {
 output "asg_sg_id" {
   value = module.security_groups.asg_sg_id
 }
+
+output "private_key_pem" {
+  value     = module.key_pair.private_key_pem
+  sensitive = true
+}

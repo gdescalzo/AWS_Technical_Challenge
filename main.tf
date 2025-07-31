@@ -40,3 +40,30 @@ module "security_groups" {
   alb_sg_name = var.alb_sg_name
   asg_sg_name = var.asg_sg_name
 }
+
+module "iam_roles" {
+  source                = "./modules/iam_roles"
+  role_name             = "ReadImagesRole"
+  policy_arn            = var.iam_policy_arn
+  instance_profile_name = "ReadImagesInstanceProfile"
+}
+
+module "key_pair" {
+  source   = "./modules/key_pair"
+  key_name = var.key_name
+}
+
+module "ec2_redhat" {
+  source               = "./modules/ec2_instance"
+  ami_id               = var.redhat_ami_id
+  instance_type        = var.redhat_instance_type
+  subnet_id            = module.subnets.public_subnet_ids[0]
+  security_group_id    = module.security_groups.ec2_sg_id
+  iam_instance_profile = var.redhat_iam_instance_profile
+  key_name             = module.key_pair.key_name
+  instance_name        = "redhat-ec2"
+  depends_on           = [module.key_pair]
+}
+
+
+

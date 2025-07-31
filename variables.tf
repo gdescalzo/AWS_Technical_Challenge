@@ -50,3 +50,14 @@ variable "asg_sg_name" {
   description = "Name for the ASG security group"
   type        = string
 }
+
+
+variable "redhat_ami_id" {}
+variable "redhat_instance_type" {}
+variable "key_name" {}
+variable "redhat_iam_instance_profile" {}
+
+variable "iam_policy_arn" {
+  description = "ARN of the policy to attach to the EC2 IAM Role"
+  type        = string
+}
