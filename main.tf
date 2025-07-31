@@ -29,3 +29,14 @@ module "routing_table" {
   public_subnet_ids  = module.subnets.public_subnet_ids
   route_table_name   = "main_public_rt"
 }
+
+module "security_groups" {
+  source = "./modules/sg"
+
+  vpc_id            = module.vpc.vpc_id
+  ssh_allowed_cidr  = var.ssh_allowed_cidr
+
+  ec2_sg_name = var.ec2_sg_name
+  alb_sg_name = var.alb_sg_name
+  asg_sg_name = var.asg_sg_name
+}

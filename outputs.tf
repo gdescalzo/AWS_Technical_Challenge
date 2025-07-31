@@ -6,3 +6,15 @@ output "vpc_id" {
 output "igw_id" {
   value = module.igw.igw_id
 }
+
+output "ec2_sg_id" {
+  value = module.security_groups.ec2_sg_id
+}
+
+output "alb_sg_id" {
+  value = module.security_groups.alb_sg_id
+}
+
+output "asg_sg_id" {
+  value = module.security_groups.asg_sg_id
+}
