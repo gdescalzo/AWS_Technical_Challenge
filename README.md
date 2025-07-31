@@ -319,6 +319,7 @@ Once the access key and secret access key for your `terraform-challenge` user ha
 <summary><strong>Step 3</strong>: Clone the Repository and Deploy the Infrastructure</summary>
 
 <br />
+
 > Once your AWS CLI is configured, you can proceed to clone the repository and deploy the infrastructure:
 
 <table>
@@ -416,6 +417,37 @@ Once the access key and secret access key for your `terraform-challenge` user ha
 
 </details>
 
+<details>
+<summary><strong>Step 4</strong>: Destroy Infrastructure</summary>
+
+<br />
+
+> If you want to remove all resources that were created by Terraform, you can run the following command:
+
+<table>
+<tbody>
+<tr>
+<td>
+
+```bash
+terraform destroy --var-file="terraform.tfvars"
+
+```
+
+</td>
+</tr>
+<tr>
+<td>
+
+<img src="https://drive.google.com/uc?id=1nWVGEGwWda0dYJvXhAvlDG9EyOdWYOt9"><br />
+<img src="https://drive.google.com/uc?id=1Dhc00W8gTuWg6zuWVmXMDSza-F0_YT8z">
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
 <hr />
 
 ## References to resources used
@@ -429,6 +461,7 @@ Once the access key and secret access key for your `terraform-challenge` user ha
 | AWS | [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) | AWS IAM official best-practises |
 | Terraform | [Remote backends](https://developer.hashicorp.com/terraform/language/state/remote) | To store the TF.state in a remote place |
 | Mermaid | [Infrastructure Diagram](https://mermaid.live/edit#pako:eNp1km9vmzAQxr-K5VeJlFCDIaRoqkT-jEVKpKhMq1SyFw64BBVs5JilbZLvPmNCUzLNMpKfx_e7O584wpgnFHrwJeeHeEeEBD9nGwbUWjBJBaOy12tP_T4YDh_AIniKWgsERNIDef99YYInHeJHv9ZTYCLDNJCB7szR5d7Xt5NoXW3zLAZhta1zmN-24u7hM9qywRD4z2aHmd4w1pUxr4zVYWbRWmR_VIMthK-Q9b9C81vIvkL430qT5r3LSeSXpeqPyIwzsOQkAROSExZTofk1V6Mdows1bamvcj61IvWpwe9lDWrukSY_iNRHaRlFFguuRTuGtvelbuT0nYsDEckeSA7KuqRt4xPwwyDyK2WFMckzloJA8KrUeVYZA5Z60Yq8gZF2_JLEO9p0kec0aSuEQTPUrpx35Gnhr8Ajz-kJhHhRkJTuo16IwaSKX6n0QKat_iVl_dhbaMnTLpIrowX21TYVpNypuMaoV1voq1NnaTRlCRzAVGQJ9KSo6AAWVBSklvBYh2yg3NGCbqCnjgkRrxu4YWfFlIQ9c160mJpYuoPeC8n3SlVlon6RWUZUP8WnK1Q1Kqa8YhJ6lqNzQO8I36CHHdfA9wgjV-0RGrkD-K7ckaEMEzvmeGwiG7nOeQA_dFVkjF0HqeXcW7aDTYTPfwEBtw6k) | Online tool to create Mermaid diagrams. |
+| HTML | [HTML Generator](https://divtable.com/generator/) | Online tool to create HTML tables. |
 
 ## Assumptions made
 
