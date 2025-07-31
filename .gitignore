@@ -2,8 +2,8 @@
 *.tfstate
 *.tfstate.backup
 *.tfvars.json
-.terraform.lock.hcl
-.tfstate.lock.info
+*.terraform.lock.hcl
+*.tfstate.lock.info
 *.log
 *.bak
 *.swp
