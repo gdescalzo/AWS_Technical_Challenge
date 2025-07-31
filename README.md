@@ -293,7 +293,7 @@ We'll create this user using the AWS Console (<i>GUI</i>).
 
 <br />
 
-Once the access key and secret access key for your `terraform-challenge` user have been generated and downloaded, you can configure the AWS CLI to use them by running the `aws configure` command. This will store the credentials locally and enable Terraform to authenticate with AWS.
+> Once the access key and secret access key for your `terraform-challenge` user have been generated and downloaded, you can configure the AWS CLI to use them by running the `aws configure` command. This will store the credentials locally and enable Terraform to authenticate with AWS.
 
 ### Instructions
 
